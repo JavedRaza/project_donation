@@ -133,6 +133,4 @@ EMAIL_HOST_USER = 'javedahmad.aiesec@gmail.com'
 EMAIL_HOST_PASSWORD = 'raza@raza@12345'
 
 
-# Configure Django App for Heroku.
-import django_heroku
-django_heroku.settings(locals())
+ 
