@@ -42,6 +42,9 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+     'whitenoise.middleware.WhiteNoiseMiddleware',
+
+
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -128,3 +131,8 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = 'True'
 EMAIL_HOST_USER = 'javedahmad.aiesec@gmail.com'
 EMAIL_HOST_PASSWORD = 'raza@raza@12345'
+
+
+# Configure Django App for Heroku.
+import django_heroku
+django_heroku.settings(locals())
